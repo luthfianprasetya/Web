@@ -1,389 +1,353 @@
+/* --- RESET --- */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
+/* --- HEADER --- */
 header {
-    background-color: #326fc9;
+    background-color: #8098ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 5vw 2vw 5vw;
+    padding: 3vw 5vw;
 }
 
 .logo {
-    width: 10vw;
-    aspect-ratio: 1 / 1; 
-    border-radius: 50%;
-    background-image: url("https://raw.githubusercontent.com/luthfianprasetya/New/refs/heads/main/logo.png");
+    width: 12vw;
+    height: 12vw;
+    background-image: url("icon.jpg");
     background-size: cover;
-    background-position: center;
-    background-color: blue;
+    border-radius: 50%;
 }
 
 .nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 5vw;
-    font-size: 3vw;
-    list-style-type: none;
+    gap: 6vw;
+    list-style: none;
 }
 
 .nav a {
     text-decoration: none;
-}
-
-.nav a:hover {
-    color: red;
-    background-color: #2d365a;
-    border-radius: 10%;
-}
-
-.bg1 { 
-    background-image: url("https://raw.githubusercontent.com/luthfianprasetya/New/refs/heads/main/Bg1.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;  
-    height: 100svw;
-}
-
-.bg2 {
-    background-image: url('https://raw.githubusercontent.com/luthfianprasetya/New/refs/heads/main/bg2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;  
-    height: 100vh;      
-}
-
-.bg3 {
-    background-image: url('https://raw.githubusercontent.com/luthfianprasetya/New/refs/heads/main/file_0000000051b8622fa14e17f7013b0670.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;  
-    height: 100vh;      
-}
-
-.bg4 {
-    background-image: url('https://raw.githubusercontent.com/luthfianprasetya/New/refs/heads/main/file_00000000a95061f9af35e49857c563c6%20(1).png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;  
-    height: 100vh;      
-}
-
-/* --- TEKS STYLE --- */
-.teks1 {
-    padding: 20vw 0 0 3vw;
     color: white;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+/* --- SECTION BACKGROUND --- */
+.bg1, .bg2, .bg3, .bg4 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- TEKS --- */
+.teks1 {
+    padding: 20vw 0 0 5vw;
     font-size: 6vw;
-    max-width: 85%;
-    text-align: left;
-    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+    color: white;
 }
 
 .teks2 {
-    padding: 5vw 0 0 3vw;
-    color: white;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    animation: muncul 1s forwards;
-    opacity: 0;
+    padding: 3vw 0 0 5vw;
     font-size: 3vw;
+    color: white;
 }
 
 .teks3 {
-    padding: 20vw;
-    color: white;
-    font-size: 6vw;
-    max-width: 85%;
+    padding: 20vw 0 3vw 0;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #333;
 }
 
-.teks4 {
-    padding: 5vw 0 0 3vw;
-    color:white;
-    font-size: 4vw;
-    text-align: left;
-    max-width: 90%;
-    opacity: 0;
-    animation: kirikanan 1.5s ease-out forwards;
-    animation-delay: 0.5s;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-}
-
-.oli {
-    list-style: disc;      
-    padding-top: 20px;
-    padding-left: 5px; 
-    margin-bottom: 5px;    
-    display: flex;
-    justify-content: space-between;
-    gap: 5vw;
-    color:white;
-    font-size: 4vw;
-    text-align: left;
-    max-width: 90%;
-    opacity: 0;
-    animation: kirikanan 1.5s ease-out forwards;
-    animation-delay: 1.3s;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-}
-
-.teks5 {
-    list-style: disc;      
-    padding-top: 20px;
-    padding-left: 35px; 
-    margin-bottom: 5px;    
-    display: flex;
-    justify-content: space-between;
-    gap: 5vw;
-    color:white;
-    font-size: 4vw;
-    text-align: left;
-    max-width: 80%;
-    opacity: 0;
-    animation: kirikanan 1.5s ease-out forwards;
-    animation-delay: 1.3s;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+.teks4, .teks5, .oli {
+    padding: 3vw 5vw;
+    font-size: 3vw;
+    color: #444;
+    text-align: justify;
 }
 
 .skills {
-    list-style: disc;      
-    padding-top: 25vw;
-    padding-left: 2vw; 
-    margin-left: 3vw;
-    margin-bottom: 5px;    
-    display: flex;
-    justify-content: space-between;
-    font-size: 6vw;
-    gap: 5vw;
-    color:white;
-    text-align: left;
-    max-width: 90%;
-    opacity: 0;
-    animation: kirikanan 3.5s ease-out forwards;
-    animation-delay: 2.3s;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    padding-top: 15vw;
+    padding-left: 8vw;
+    font-size: 4vw;
+    font-weight: bold;
+    color: #222;
 }
 
 .teks6 {
-    padding: 10vw;
-    color: white;
-    font-size: 10vw;
-    max-width: 85%;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    font-weight: bold;
+    padding: 8vw 0 3vw 0;
+    color: #333;
 }
 
 .teks7 {
-    margin-top: 20vw;
-    padding-left: 5vw; 
     display: flex;
-    align-items: center;
-    gap: 10vw;
-    color:white;
-    font-size: 3vw;
-    text-align: left;
-    max-width: 90%;
-    opacity: 0;
-    animation: kirikanan 4.5s ease-out forwards;
-    animation-delay: 1.3s;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    justify-content: flex-start;
+    margin-top: 8vw;
+    padding-left: 8vw;
+    gap: 6vw;
 }
 
 .teks7 h3 {
-    font-size: 7vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
 }
 
 .teks7 li {
-    text-shadow: 2px 2px 5px black;
-    font-size: 7vw;
+    font-size: 2.5vw;
 }
 
 .teks8 {
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    margin-left: 5vw;
-    color: white;
-    font-size: 10vw;
-    max-width: 85%;
     text-align: center;
-    text-shadow: 2px 2px 5px black;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 8vw;
+    color: #333;
 }
 
-legend {
-    color: white;
-    font-size: 7vw;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-}
-
-legend {
-    color: white;
-    font-size: 7vw;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
+/* --- FORM --- */
+form {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 fieldset {
-    padding: 5vw;
-    margin: 3vw;
+    border: 2px solid #8098ff;
+    border-radius: 10px;
+    padding: 3vw;
+    width: 90%;
+    max-width: 500px;
+}
+
+legend {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #8098ff;
 }
 
 label {
-    color: white;
-    font-size: 5vw;
-    text-shadow: 2px 2px 5px black;
+    font-size: 2.5vw;
+    display: block;
+    margin-top: 2vw;
 }
 
-.form span {
-    color: white;
-    font-size: 4vw;
-    text-shadow: 2px 2px 5px black;
+input, textarea {
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 2vw;
+    margin-top: 1vw;
 }
 
 textarea {
-    resize: vertical;
-    width: 100%;
     min-height: 100px;
-}
-
-.output-box {
-    border: 1px solid #aaa;
-    padding: 1vw;
-    margin: 0 wvw 0 2vw;
-    width: 80vw;
-    height: 30vw;
-    background-color: #fff;
-    color: black;
-    
+    resize: vertical;
 }
 
 button {
-    width: 83vw;
-    background-color: #004f86;
-    padding: 10px;
-    border-radius: 10%;
+    margin-top: 3vw;
+    padding: 1vw 2vw;
+    background: #8098ff;
     color: white;
-    font-size: 4vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 2vw;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #006bbd;
+    background: #5a6fdc;
 }
 
-
-.titik2 {
-    padding-left: 19vw;
+.output-box {
+    margin-top: 3vw;
+    width: 80%;
+    height: 20vw;
+    border: 1px solid #8098ff;
+    border-radius: 10px;
+    padding: 1vw;
+    background: #f9f9f9;
+    overflow-y: auto;
+    font-size: 2vw;
 }
 
-.titik1 {
-    padding-left: 2.5vw;
-}
-
+/* --- FOOTER --- */
 footer {
-    background-color: #0081ff;
-    height: 12vw;
+    background: #8098ff;
+    text-align: center;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    padding-top: 3vw;
+    font-size: 2vw;
+    color: white;
 }
 
-@keyframes kirikanan {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
+/* --- TABLET VIEW (768px – 1023px) --- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        padding: 2vw 4vw;
     }
-    to {
-        transform: translateX(0);
-        opacity: 1;
+
+    .logo {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .nav {
+        gap: 5vw;
+    }
+
+    .nav a {
+        font-size: 2vw;
+    }
+
+    .teks1 {
+        font-size: 5vw;
+        padding-top: 12vw;
+    }
+
+    .teks2 {
+        font-size: 2vw;
+    }
+
+    .teks3 {
+        font-size: 5vw;
+    }
+
+    .teks4, .teks5, .oli {
+        font-size: 2vw;
+    }
+
+    .skills {
+        font-size: 3vw;
+    }
+
+    .teks6 {
+        font-size: 4vw;
+    }
+
+    .teks7 {
+        font-size: 2vw;
+    }
+
+    .teks7 h3 {
+        font-size: 2.5vw;
+    }
+
+    .teks7 li {
+        font-size: 2vw;
+    }
+
+    .teks8 {
+        font-size: 4vw;
+    }
+
+    legend {
+        font-size: 2.5vw;
+    }
+
+    label {
+        font-size: 1.8vw;
+    }
+
+    .form span {
+        font-size: 1.5vw;
+    }
+
+    textarea {
+        min-height: 120px;
+        font-size: 1.5vw;
+    }
+
+    button {
+        width: 25vw;
+        font-size: 1.5vw;
+    }
+
+    .output-box {
+        width: 60vw;
+        height: 20vw;
+        font-size: 1.5vw;
+    }
+
+    footer {
+        height: 8vw;
+    }
+
+    footer p {
+        font-size: 1.5vw;
     }
 }
 
-@keyframes muncul {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* --- RESPONSIVE UNTUK LAYAR LEBAR --- */
+/* --- DESKTOP VIEW (≥1024px) --- */
 @media screen and (min-width: 1024px) {
-    /* --- TEKS --- */
+    header {
+        padding: 1vw 3vw;
+    }
+
+    .logo {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .nav {
+        gap: 3vw;
+    }
+
+    .nav a {
+        font-size: 1.3vw;
+    }
+
     .teks1 {
         font-size: 3vw;
-        padding: 10vw 0 0 5vw;
+        padding-top: 10vw;
         max-width: 60%;
     }
 
     .teks2 {
         font-size: 1.5vw;
-        padding: 2vw 0 0 5vw;
     }
 
     .teks3 {
         font-size: 3vw;
-        padding: 10vw 0 2vw 0;
     }
 
     .teks4, .teks5, .oli {
         font-size: 1.3vw;
         max-width: 70%;
-        padding: 1vw 5vw;
     }
 
     .skills {
         font-size: 2vw;
-        padding-top: 8vw;
-        padding-left: 10vw;
     }
 
     .teks6 {
         font-size: 3vw;
-        padding: 5vw 0 2vw 0;
     }
 
     .teks7 {
         font-size: 1.5vw;
-        margin-top: 5vw;
-        padding-left: 10vw;
-        gap: 5vw;
     }
 
     .teks7 h3 {
@@ -396,7 +360,6 @@ footer p {
 
     .teks8 {
         font-size: 3vw;
-        padding-top: 5vw;
     }
 
     legend {
@@ -405,10 +368,6 @@ footer p {
 
     label {
         font-size: 1.2vw;
-    }
-
-    .form span {
-        font-size: 1vw;
     }
 
     textarea {
@@ -425,9 +384,6 @@ footer p {
         width: 40vw;
         height: 15vw;
         font-size: 1vw;
-        display: flex;
-        justify-content: space-between;
-        gap: 2vw;
     }
 
     footer {
@@ -436,6 +392,5 @@ footer p {
 
     footer p {
         font-size: 1vw;
-        padding-top: 1vw;
     }
 }
