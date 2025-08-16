@@ -448,17 +448,22 @@ fieldset {
         gap: 2vw;
     }
 
-    footer {
-        height: 5vw;
-    }
-
-    footer p {
-        font-size: 1vw;
-        padding-top: 1vw;
-    }
+footer {
+    background-color: #0081ff;
+    height: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* --- RESPONSIVE UNTUK LAYAR PC (DESKTOP) --- */
+footer p {
+    font-size: 3vw;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
 @media screen and (min-width: 1024px) {
     header {
         padding: 1vw 3vw;
@@ -580,12 +585,9 @@ html, body {
 main {
     flex: 1; 
 }
-    footer {
+      footer {
         height: 5vw;
     }
-
     footer p {
-        font-size: 3vw;
-        padding-top: 1vw;
+        font-size: 1.2vw;
     }
-}
