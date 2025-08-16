@@ -1,3 +1,6 @@
+let nama = prompt("Masukkan nama Anda:");
+    document.getElementById("nama").innerText = nama;
+    
 document.getElementById("messageForm").addEventListener("submit", function(event){
     event.preventDefault(); // Biar tidak reload
 
